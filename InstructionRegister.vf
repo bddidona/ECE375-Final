@@ -1,0 +1,104 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : InstructionRegister.vf
+// /___/   /\     Timestamp : 12/08/2017 10:00:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Desktop/FinalProject/InstructionRegister.vf -w C:/Users/User/Desktop/FinalProject/InstructionRegister.sch
+//Design Name: InstructionRegister
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module InstructionRegister(CE, 
+                           CLK, 
+                           CLR, 
+                           IRI0, 
+                           IRI1, 
+                           IRI2, 
+                           IRI3, 
+                           IRI4, 
+                           IRI5, 
+                           IRI6, 
+                           IRI7, 
+                           IRO0, 
+                           IRO1, 
+                           IRO2, 
+                           IRO3, 
+                           IRO4, 
+                           IRO5, 
+                           IRO6, 
+                           IRO7);
+
+    input CE;
+    input CLK;
+    input CLR;
+    input IRI0;
+    input IRI1;
+    input IRI2;
+    input IRI3;
+    input IRI4;
+    input IRI5;
+    input IRI6;
+    input IRI7;
+   output IRO0;
+   output IRO1;
+   output IRO2;
+   output IRO3;
+   output IRO4;
+   output IRO5;
+   output IRO6;
+   output IRO7;
+   
+   
+   FDCE #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI0), 
+                .Q(IRO0));
+   FDCE #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI1), 
+                .Q(IRO1));
+   FDCE #( .INIT(1'b0) ) XLXI_3 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI2), 
+                .Q(IRO2));
+   FDCE #( .INIT(1'b0) ) XLXI_4 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI3), 
+                .Q(IRO3));
+   FDCE #( .INIT(1'b0) ) XLXI_5 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI4), 
+                .Q(IRO4));
+   FDCE #( .INIT(1'b0) ) XLXI_6 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI5), 
+                .Q(IRO5));
+   FDCE #( .INIT(1'b0) ) XLXI_7 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI6), 
+                .Q(IRO6));
+   FDCE #( .INIT(1'b0) ) XLXI_8 (.C(CLK), 
+                .CE(CE), 
+                .CLR(CLR), 
+                .D(IRI7), 
+                .Q(IRO7));
+endmodule

@@ -1,0 +1,63 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/User/Desktop/FinalProject/main_main_sch_tb_isim_beh.exe -prj C:/Users/User/Desktop/FinalProject/main_main_sch_tb_beh.prj work.main_main_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/fullAdder.vf" into library work
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/ALU.vf" into library work
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/sequencer.vf" into library work
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/InstructionRegister.vf" into library work
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/counter.vf" into library work
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/accumulator.vf" into library work
+Analyzing Verilog file "C:/Users/User/Desktop/FinalProject/main.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/User/Desktop/FinalProject/finalTB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module RAM16X8S(INIT_00=16'b10000000100...
+Compiling module FDCE
+Compiling module FD4CE_MXILINX_main
+Compiling module XOR2
+Compiling module FTCE_MXILINX_main
+Compiling module AND2
+Compiling module VCC
+Compiling module CB2CE_MXILINX_main
+Compiling module AND3
+Compiling module AND3B1
+Compiling module AND3B2
+Compiling module D2_4E_MXILINX_main
+Compiling module sequencer_MUSER_main
+Compiling module AND2B1
+Compiling module OR2
+Compiling module M2_1_MXILINX_main
+Compiling module counter_MUSER_main
+Compiling module InstructionRegister_MUSER_main
+Compiling module AND4
+Compiling module AND4B1
+Compiling module AND4B2
+Compiling module AND4B3
+Compiling module D3_8E_MXILINX_main
+Compiling module M2_1E_MXILINX_main
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_main
+Compiling module fullAdder_MUSER_main
+Compiling module INV
+Compiling module GND
+Compiling module ALU_MUSER_main
+Compiling module accumulator_MUSER_main
+Compiling module OR4
+Compiling module main
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
+Compiling architecture behavioral of entity main_main_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 24 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 34 Verilog Units
+Built simulation executable C:/Users/User/Desktop/FinalProject/main_main_sch_tb_isim_beh.exe
+Fuse Memory Usage: 48556 KB
+Fuse CPU Usage: 561 ms

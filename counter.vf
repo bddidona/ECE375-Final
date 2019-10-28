@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : counter.vf
+// /___/   /\     Timestamp : 12/08/2017 10:00:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Desktop/FinalProject/counter.vf -w C:/Users/User/Desktop/FinalProject/counter.sch
+//Design Name: counter
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module counter(CLK, 
+               CLR, 
+               INC, 
+               PC0, 
+               PC1, 
+               PC2, 
+               PC3);
+
+    input CLK;
+    input CLR;
+    input INC;
+   output PC0;
+   output PC1;
+   output PC2;
+   output PC3;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_25;
+   wire XLXN_30;
+   wire XLXN_33;
+   wire PC0_DUMMY;
+   wire PC1_DUMMY;
+   wire PC2_DUMMY;
+   wire PC3_DUMMY;
+   
+   assign PC0 = PC0_DUMMY;
+   assign PC1 = PC1_DUMMY;
+   assign PC2 = PC2_DUMMY;
+   assign PC3 = PC3_DUMMY;
+   FDCE #( .INIT(1'b0) ) XLXI_9 (.C(CLK), 
+                .CE(XLXN_25), 
+                .CLR(CLR), 
+                .D(XLXN_7), 
+                .Q(PC0_DUMMY));
+   FDCE #( .INIT(1'b0) ) XLXI_10 (.C(CLK), 
+                 .CE(XLXN_25), 
+                 .CLR(CLR), 
+                 .D(XLXN_12), 
+                 .Q(PC1_DUMMY));
+   FDCE #( .INIT(1'b0) ) XLXI_11 (.C(CLK), 
+                 .CE(XLXN_25), 
+                 .CLR(CLR), 
+                 .D(XLXN_10), 
+                 .Q(PC2_DUMMY));
+   FDCE #( .INIT(1'b0) ) XLXI_12 (.C(CLK), 
+                 .CE(XLXN_25), 
+                 .CLR(CLR), 
+                 .D(XLXN_9), 
+                 .Q(PC3_DUMMY));
+   XOR2  XLXI_13 (.I0(INC), 
+                 .I1(PC0_DUMMY), 
+                 .O(XLXN_7));
+   XOR2  XLXI_14 (.I0(XLXN_30), 
+                 .I1(PC1_DUMMY), 
+                 .O(XLXN_12));
+   XOR2  XLXI_15 (.I0(XLXN_33), 
+                 .I1(PC2_DUMMY), 
+                 .O(XLXN_10));
+   XOR2  XLXI_16 (.I0(XLXN_8), 
+                 .I1(PC3_DUMMY), 
+                 .O(XLXN_9));
+   AND2  XLXI_18 (.I0(INC), 
+                 .I1(PC0_DUMMY), 
+                 .O(XLXN_30));
+   AND2  XLXI_19 (.I0(XLXN_30), 
+                 .I1(PC1_DUMMY), 
+                 .O(XLXN_33));
+   AND2  XLXI_20 (.I0(XLXN_33), 
+                 .I1(PC2_DUMMY), 
+                 .O(XLXN_8));
+   VCC  XLXI_21 (.P(XLXN_25));
+endmodule

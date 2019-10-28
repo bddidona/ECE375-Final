@@ -1,0 +1,9 @@
+MODULE main
+	SUBMODULE sequencer
+		INSTANCE XLXI_4
+	SUBMODULE counter
+		INSTANCE XLXI_9
+	SUBMODULE InstructionRegister
+		INSTANCE XLXI_11
+	SUBMODULE accumulator
+		INSTANCE XLXI_32

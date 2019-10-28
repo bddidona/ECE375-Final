@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fullAdder.vf
+// /___/   /\     Timestamp : 12/08/2017 10:00:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Desktop/FinalProject/fullAdder.vf -w C:/Users/User/Desktop/FinalProject/fullAdder.sch
+//Design Name: fullAdder
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fullAdder(A, 
+                 B, 
+                 Cin, 
+                 Cout, 
+                 S);
+
+    input A;
+    input B;
+    input Cin;
+   output Cout;
+   output S;
+   
+   wire XLXN_7;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_7));
+   XOR2  XLXI_2 (.I0(Cin), 
+                .I1(XLXN_7), 
+                .O(S));
+   AND2  XLXI_3 (.I0(A), 
+                .I1(B), 
+                .O(XLXN_10));
+   AND2  XLXI_4 (.I0(Cin), 
+                .I1(XLXN_7), 
+                .O(XLXN_9));
+   OR2  XLXI_5 (.I0(XLXN_10), 
+               .I1(XLXN_9), 
+               .O(Cout));
+endmodule

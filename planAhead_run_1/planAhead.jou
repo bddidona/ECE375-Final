@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Dec 08 09:22:33 2017
+# Process ID: 4428
+# Log file: C:/Users/User/Desktop/FinalProject/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/User/Desktop/FinalProject/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/User/Desktop/FinalProject/pa.fromNetlist.tcl
+startgroup
+set_property package_pin G12 [get_ports CLR]
+endgroup
+startgroup
+set_property package_pin C8 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports CIN]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports B7]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports B6]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports B5]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports B4]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports B3]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports B2]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports B3]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports B1]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports B0]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {ramIN[0]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {ramIN[1]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {ramIN[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {ramIN[3]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {ramIN[4]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {ramIN[5]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {ramIN[6]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {ramIN[7]}]
+endgroup
+save_constraints
