@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Dec  6 23:15:43 2017
+# Process ID: 5232
+# Current directory: C:/Users/User/Desktop/Final_Project/Final_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3764 C:\Users\User\Desktop\Final_Project\Final_Project\Final_Project.xpr
+# Log file: C:/Users/User/Desktop/Final_Project/Final_Project/vivado.log
+# Journal file: C:/Users/User/Desktop/Final_Project/Final_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/User/Desktop/Final_Project/Final_Project/Final_Project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
